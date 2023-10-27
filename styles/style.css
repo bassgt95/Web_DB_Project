@@ -1,0 +1,36 @@
+body {
+    text-align: center;
+    background-color: skyblue;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 2px 2px darkgray;
+    background: url("../images/ocean.jpg");
+}
+
+nav {
+    background-color: cyan;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flex;
+    justify-content: space-around;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+textarea, input {
+    border: 10px;
+    border-style: groove;
+    border-color: blue;
+    border-radius: 50px
+}
+
+.button {
+    background-color: cyan;
+}
+
+img {
+    margin: 20px;
+    width: 25%;
+    border-radius: 50%;
+}
