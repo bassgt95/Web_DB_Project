@@ -16,6 +16,6 @@ const posts = [
     }
 ]
 
-const getPosts = () => posts;
+async function getPosts = () => await posts;
 
 // const allPosts = JSON.stringify(posts);

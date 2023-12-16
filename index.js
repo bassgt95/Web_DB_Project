@@ -5,7 +5,6 @@ const path = require('path');
 app.use(express.json());
 
 const userRoutes = require('./server/routes/user');
-// croute to at least one other entity that is NOT user/customer/etc.
 
 // CORS middleware
 app.use(function (req, res, next) {
@@ -14,6 +13,9 @@ app.use(function (req, res, next) {
     res.header("Access-Control-Allow-Methods", "GET,POST,PUT,DELETE,OPTIONS");
     next();
 });
+
+app.use(express.static(__dirname + "/public"));
+// app.get('/', (req, res) => res.sendFile(path.join(__dirname, 'public/')));
 
 app.use('/users', userRoutes);
 // app.use for routes above
